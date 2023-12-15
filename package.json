@@ -39,6 +39,7 @@
     "@nuxtseo/module": "^2.0.0-beta.39",
     "@pinegrow/nuxt-module": "^3.0.34",
     "@pinegrow/tailwindcss-plugin": "^3.0.18",
+    "@storefront-ui/vue": "^2.6.0",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^20.5.0",
