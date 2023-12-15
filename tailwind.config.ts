@@ -6,8 +6,10 @@ import {
 
 import { getFontsWithFallback } from './utils/font'
 import { safelist } from './utils/colors'
+import { tailwindConfig } from '@storefront-ui/vue/tailwind-config'
 
 export default {
+  presets: [tailwindConfig],
   darkMode: 'class',
   plugins: [
     require('@tailwindcss/typography'),
@@ -30,6 +32,7 @@ export default {
       '{.,*-layer}/nuxt.config.{js,ts}',
       '{.,*-layer}/app.vue',
       '{.,*-layer}/*.{mjs,js,ts}',
+      './node_modules/@storefront-ui/vue/**/*.{js,mjs}',
     ]
     return process.env.NODE_ENV === 'production'
       ? _content
